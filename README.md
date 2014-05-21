@@ -1,6 +1,8 @@
 blockparser
 ===========
 
+    Initial Update: Vericoin
+
     Credits:
     --------
 
