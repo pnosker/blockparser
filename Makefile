@@ -7,7 +7,7 @@ CPLUS = g++
 INC =                           \
         -I.                     \
         -DNDEBUG                \
-#        -DLITECOIN              \
+        -DVERICOIN              \
 
 COPT =                          \
         -g0                     \
