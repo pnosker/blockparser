@@ -522,19 +522,19 @@ static bool buildBlock(
     ;
 
     if(unlikely(e<=(8+p))) {
-        //printf("end of map, reason : pointer past EOF\n");
+        printf("end of map, reason : pointer past EOF\n");
         return true;
     }
 
     LOAD(uint32_t, magic, p);
     if(unlikely(expected!=magic)) {
-        //printf("end of map, reason : magic is fucked %d away from EOF\n", (int)(e-p));
+        printf("end of map, reason : magic is fucked %d away from EOF\n", (int)(e-p));
         return true;
     }
 
     LOAD(uint32_t, size, p);
     if(unlikely(e<(p+size))) {
-        //printf("end of map, reason : end of block past EOF, %d past EOF\n", (int)((p+size)-e));
+        printf("end of map, reason : end of block past EOF, %d past EOF\n", (int)((p+size)-e));
         return true;
     }
 
