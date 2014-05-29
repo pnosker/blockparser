@@ -515,7 +515,7 @@ static bool buildBlock(
 {
     static const uint32_t expected =
     #if defined(VERICOIN)
-        0x05223570
+        0xdbb6c0fb
     #else
         0xd9b4bef9
     #endif
